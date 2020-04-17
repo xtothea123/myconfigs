@@ -184,7 +184,7 @@ nnoremap <F6> <Esc>:TlistOpen<CR>
 
 
 "#### COLORS ####
-colorscheme jellybeans
+"colorscheme jellybeans
 "colorscheme advantage 
 
 
@@ -257,13 +257,13 @@ let php_htmlInStrings=1
 
 "autocmd VimEnter * NERDTree /mnt/files/projekte
 autocmd VimEnter * wincmd p
-autocmd BufEnter * NERDTreeMirror
-nnoremap <F7> <ESC>:NERDTreeToggle /mnt/files/projekte<CR>
-let NERDTreeShowLineNumbers = 0
-let NERDChristmasTree = 1
-let NERDTreeShowFiles = 1
-let NERDTreeWinSIze   = 37
-let NERDTreeChDirMode = 1 
+"autocmd BufEnter * NERDTreeMirror
+"nnoremap <F7> <ESC>:NERDTreeToggle /mnt/files/projekte<CR>
+"let NERDTreeShowLineNumbers = 0
+"let NERDChristmasTree = 1
+"let NERDTreeShowFiles = 1
+"let NERDTreeWinSIze   = 37
+"let NERDTreeChDirMode = 1
 
 
 
@@ -356,10 +356,15 @@ endif
 
 
 "VUNDLE
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#rc()
 "PHPQA
-Bundle 'joonty/vim-phpqa.git'
+"Bundle 'joonty/vim-phpqa.git'
+
+
+
+
+
 nnoremap <F8> <Esc>:Phpcs<CR>
 let g:phpqa_messdetector_autorun = 0
 let g:phpqa_messdetector_ruleset = "~/phpmd/phpmd.xml"
